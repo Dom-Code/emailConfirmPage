@@ -6,11 +6,11 @@ import Registration from './Components/Registration.tsx';
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: '/emailConfirmPage',
     element: <App />,
   },
   {
-    path: '/:id',
+    path: '/emailConfirmPage/:id',
     element: <Registration />,
   },
 ]);
