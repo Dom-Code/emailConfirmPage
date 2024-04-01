@@ -1,17 +1,18 @@
 import ReactDOM from 'react-dom/client';
 import App from './App.tsx';
 import './index.css';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import Registration from './Components/Registration.tsx';
+import { createHashRouter, RouterProvider } from 'react-router-dom';
+import Error from './Route/ErrorPage.tsx';
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
-    path: '/emailConfirmPage',
+    path: '/',
     element: <App />,
   },
+
   {
-    path: '/emailConfirmPage/:id',
-    element: <Registration />,
+    path: 'emailConfirmPage/error',
+    element: <Error />,
   },
 ]);
 
